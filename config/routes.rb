@@ -1,4 +1,8 @@
 Tokenizer::Application.routes.draw do
+  get "freq/home"
+
+  get "freq/freq"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
