@@ -1,4 +1,6 @@
 Tokenizer::Application.routes.draw do
+  root :to => 'freq#home'
+
   get "freq/home"
 
   get "freq/freq"
