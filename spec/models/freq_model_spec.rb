@@ -16,6 +16,12 @@ describe Freq do
     it 'should return the proper number of tokens' do
       @tokens.length.should == 9
     end
+
+    it 'should normalize the tokens by lower casing them' do
+      @tokens.each do |token|
+        (/[A-Z]/ =~ token).should == nil
+      end
+    end
   end
 end
 
